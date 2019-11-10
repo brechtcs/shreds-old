@@ -2,10 +2,10 @@ MAKEFLAGS += "-j $(shell nproc)"
 
 .PHONY: all
 
-all: $(patsubst src/%.txt, www/%.html, $(wildcard src/*.txt))
-	@rm -f $(filter-out $^, $(wildcard www/*.html))
+all: $(patsubst src/%.txt, web/%.html, $(wildcard src/*.txt))
+	@rm -f $(filter-out $^, $(wildcard web/*.html))
 
-www/%.html: src/%.txt .vendor $(wildcard lib/*.js)
+web/%.html: src/%.txt .vendor $(wildcard lib/*.js)
 	@echo 'make: $@'
 	@mkdir -p $(dir $@)
 	@NODE_PATH=$(word 2, $^) node --no-deprecation ./bin/press.js --src $< --target $@ && echo 'done: $@'
