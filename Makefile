@@ -5,10 +5,12 @@ MAKEFLAGS += "-j $(shell nproc)"
 all: $(patsubst src/%.txt, web/%.html, $(wildcard src/*.txt))
 	@rm -f $(filter-out $^, $(wildcard web/*.html))
 
-web/%.html: src/%.txt .vendor $(wildcard lib/*.js)
+web/%.html: src/%.txt .vendor bin/press.js
 	@echo 'make: $@'
 	@mkdir -p $(dir $@)
 	@NODE_PATH=$(word 2, $^) node --no-deprecation ./bin/press.js -s $< -t $@ && echo 'done: $@'
+
+bin/press.js: $(wildcard lib/*.js)
 
 .vendor: package.json
 	@mkdir -p $@
