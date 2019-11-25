@@ -11,6 +11,7 @@ web/%.html: src/%.txt .vendor bin/press.js
 	@NODE_PATH=$(word 2, $^) node --no-deprecation ./bin/press.js -s $< -t $@ && echo 'done: $@'
 
 bin/press.js: $(wildcard lib/*.js)
+	@touch $@
 
 .vendor: package.json
 	@mkdir -p $@
