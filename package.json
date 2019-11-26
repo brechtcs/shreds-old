@@ -6,7 +6,6 @@
     "rehype-minify-css-style": "^2.0.0",
     "rehype-stringify": "^6.0.0",
     "rehype-urls": "^1.1.1",
-    "remark-containers": "^1.1.1",
     "remark-jimp-embed": "^1.0.0",
     "remark-parse": "^7.0.1",
     "remark-rehype": "^5.0.0",
@@ -14,6 +13,7 @@
     "stdopt": "^2.0.0",
     "stdrun": "^2.0.2",
     "unified": "^7.1.0",
+    "unist-util-visit": "^2.0.1",
     "voca": "^1.4.0"
   }
 }

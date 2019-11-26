@@ -1,13 +1,9 @@
 ![Some bacon](https://upload.wikimedia.org/wikipedia/commons/e/e9/Closeup_of_Bacon.jpg)
 
-::: aside
-Photo by [Ryan Guy](https://commons.wikimedia.org/wiki/File:Closeup_of_Bacon.jpg), edited by [Shreds](http://shreds.news)
-:::
+> Photo by [Ryan Guy](https://commons.wikimedia.org/wiki/File:Closeup_of_Bacon.jpg), edited by [Shreds](http://shreds.news)
 
 Dolor amet aliquip shoulder pig, lorem turkey pork chop leberkas venison. Meatball cupidatat strip steak, id et incididunt pig meatloaf beef ribs eu pork chop andouille landjaeger ut esse. Pig picanha short ribs, nisi minim irure ham sausage excepteur tri-tip duis.
 
 Brisket voluptate ipsum tri-tip, shoulder capicola sunt nostrud exercitation consectetur. Sausage ullamco porchetta, drumstick pastrami lorem turducken ex bacon sed labore ipsum. Aliquip in consequat capicola dolore culpa alcatra cillum doner venison pastrami. Ut bresaola deserunt ullamco porchetta in nisi landjaeger. Pastrami landjaeger excepteur fugiat. Leberkas incididunt buffalo ullamco do tail hamburger shank aliqua ball tip cillum dolor brisket. Chicken et alcatra aliquip drumstick jerky duis. Kielbasa culpa incididunt pancetta short ribs ham hock.
 
-::: aside
-[Bacon Ipsum Generator](https://baconipsum.com), 9 nov 2019
-:::
+> [Bacon Ipsum Generator](https://baconipsum.com), 9 nov 2019
