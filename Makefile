@@ -2,8 +2,13 @@ MAKEFLAGS += "-j $(shell nproc)"
 
 .PHONY: all
 
-all: $(patsubst src/%.txt, web/%.html, $(wildcard src/*.txt))
-	@rm -f $(filter-out $^, $(wildcard web/*.html))
+pamphlets := $(patsubst src/%.txt, web/%.html, $(wildcard src/*.txt))
+trash := $(filter-out $(pamphlets), $(wildcard web/*.html))
+
+all: $(pamphlets)
+ifneq ($(trash),)
+	@rm -i $(trash)
+endif
 
 web/%.html: src/%.txt .vendor bin/press.js
 	@echo 'make: $@'
