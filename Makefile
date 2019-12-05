@@ -1,6 +1,6 @@
 MAKEFLAGS += "-j $(shell nproc)"
 
-.PHONY: all
+.PHONY: all current
 
 pamphlets := web/index.html $(patsubst src/%.txt, web/%.html, $(wildcard src/*.txt))
 trash := $(filter-out $(pamphlets), $(wildcard web/*.html))
@@ -10,6 +10,9 @@ all: $(pamphlets)
 ifneq ($(trash),)
 	@rm -i $(trash)
 endif
+
+current: $(vendor)
+	@NODE_PATH=$(vendor) node --no-deprecation ./bin/current.js
 
 web/index.html: README.md bin/press.js
 	@echo 'make: $@'
